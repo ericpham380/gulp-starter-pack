@@ -1,0 +1,32 @@
+{
+  "name": "gulp-starter-pack",
+  "version": "1.0.0",
+  "description": "Starter pack to automate all the things with Gulp development workflow - from simulating a local server environment, compiling, minifying, concatenating files (SASS, CSS, JS) to making it ready for shipping to production.",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ericpham380/gulp-starter-pack.git"
+  },
+  "keywords": [
+    "gulp"
+  ],
+  "author": "Eric Pham",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ericpham380/gulp-starter-pack/issues"
+  },
+  "homepage": "https://github.com/ericpham380/gulp-starter-pack#readme",
+  "devDependencies": {
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.3",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlclean": "^2.7.20",
+    "gulp-inject": "^4.3.1",
+    "gulp-uglify": "^3.0.0",
+    "gulp-webserver": "^0.9.1"
+  }
+}
