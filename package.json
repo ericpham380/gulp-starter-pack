@@ -4,7 +4,7 @@
   "description": "Starter pack to automate all the things with Gulp development workflow - from simulating a local server environment, compiling, minifying, concatenating files (SASS, CSS, JS) to making it ready for shipping to production.",
   "main": "index.js",
   "scripts": {
-    "test": "test"
+    "test": "Testing Testing Testing"
   },
   "repository": {
     "type": "git",

@@ -70,6 +70,9 @@ gulp.task('watch', ['serve'], function() {
 /* Default gulp will in turn run all of the tasks you have already built */
 gulp.task('default', ['watch']);
 
+gulp.task('test', function() {
+  console.log("Testing completed!");
+});
 
 /* Building the dist - pack up your files to make them ready for production */
 gulp.task('html:dist', function() {
