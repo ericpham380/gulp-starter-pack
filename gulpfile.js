@@ -82,14 +82,14 @@ gulp.task('css:dist', function() {
   return gulp.src(paths.srcCSS)
     .pipe(concat('style.min.css'))
     .pipe(cleanCSS())
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.dist + '/css'));
 });
 
 gulp.task('js:dist', function() {
   return gulp.src(paths.srcJS)
     .pipe(concat('script.min.js'))
     .pipe(uglify())
-    .pipe(gulp.dest(paths.dist));
+    .pipe(gulp.dest(paths.dist + '/js'));
 });
 
 gulp.task('copy:dist', ['html:dist', 'css:dist', 'js:dist']);
@@ -101,13 +101,13 @@ gulp.task('inject:dist', ['copy:dist'], function() {
     .pipe(inject( css, { relative: true }) )
     .pipe(inject( js, { relative: true }) )
     .pipe(gulp.dest(paths.dist));
-})
+});
 
 gulp.task('build', ['inject:dist']);
 
 /* Cleaning up - It’s not considered good practice to send off the tmp and dist folders to GitHub or whatever version control you may be using. */
 gulp.task('clean', function() {
-  del(['paths.tmp', 'paths.dist']);
+  del([paths.tmp, paths.dist]);
 });
 
 /* Another good practice would be to add the tmp and dist folders to your .gitignore */
